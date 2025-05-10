@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreveal_docs=self.webpackChunkreveal_docs||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/reveal-docs/blog","blogTitle":"Blog","authorsListPath":"/reveal-docs/blog/authors"}')}}]);
