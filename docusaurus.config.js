@@ -15,10 +15,10 @@ const config = {
   favicon: 'https://usereveal.ai/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://revealai-dev.github.io',
+  url: 'https://docs.usereveal.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/reveal-docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
