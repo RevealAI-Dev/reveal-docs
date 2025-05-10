@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreveal_docs=self.webpackChunkreveal_docs||[]).push([[634],{9179:(e,r,s)=>{s.r(r),s.d(r,{default:()=>a});var t=s(6347),u=s(4848);function a(){return(0,u.jsx)(t.rd,{to:"/intro"})}}}]);
