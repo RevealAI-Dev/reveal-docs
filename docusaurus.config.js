@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Reveal',
-  tagline: 'AI-Powered Qualitative Research & User Interviews',
+  title: 'Reveal Widget Documentation',
+  tagline: 'Integrate conversational studies and surveys into your website',
   favicon: 'https://usereveal.ai/favicon.ico',
 
   // Set the production url of your site here
@@ -46,23 +46,9 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RevealAI-Dev/reveal-docs/tree/main/',
+          routeBasePath: '/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,72 +60,79 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/reveal-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        // disableSwitch: true,
+        // respectPrefersColorScheme: false,
+      },
       navbar: {
         logo: {
           alt: 'Reveal Logo',
-          src: 'img/reveal-logo.png',
+          src: 'img/reveal-logo-neg.png',
+          srcDark: 'img/reveal-logo.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
+          //   to: '/',
+          //   position: 'left',
+          //   label: 'Docs',
           // },
         ],
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: 'Docs',
-      //       items: [
-      //         {
-      //           label: 'Tutorial',
-      //           to: '/docs/intro',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Stack Overflow',
-      //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discordapp.com/invite/docusaurus',
-      //         },
-      //         {
-      //           label: 'X',
-      //           href: 'https://x.com/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: '/blog',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Introduction',
+                to: '/',
+              },
+              {
+                label: 'Getting Started',
+                to: '/getting-started',
+              },
+              {
+                label: 'Configuration',
+                to: '/configuration',
+              },
+              {
+                label: 'Floating Widget',
+                to: '/floating-widget',
+              },
+              {
+                label: 'Embedded Component',
+                to: '/embedded-component',
+              },
+            ],
+          },
+          {
+            title: 'Support',
+            items: [
+              {
+                label: 'Contact Us',
+                to: '/support',
+              },
+              {
+                label: 'Email',
+                href: 'mailto:support@usereveal.ai',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Reveal Website',
+                href: 'https://usereveal.ai',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Reveal AI.`,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
